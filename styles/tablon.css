@@ -1,0 +1,99 @@
+#tablon {
+    width: 95vw;
+    height: max-content;
+    margin: var(--spacing) auto;
+    background-color: var(--background-elevated-contrast);
+    background-image: url(https://www.transparenttextures.com/patterns/brilliant.png);
+    background-attachment: fixed;
+    color: var(--text-contrast);
+    border-radius: var(--spacing);
+    corner-shape: squircle;
+    padding: var(--spacing);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing);
+}
+
+#tablon .lasttopics {
+    grid-column: 1 / -1;
+
+    .tablon-title {
+        font: bold var(--f-l) var(--f-title);
+        font-stretch: 125%;
+    }
+
+
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-radius: var(--spacing);
+        corner-shape: square square squircle squircle;
+        border: 1px solid var(--border);
+        gap: 2px;
+        column-rule: 1px solid var(--border);
+        row-rule: 1px solid var(--border);
+        row-rule-break: none;
+        column-rule-break: none;
+        overflow: clip;
+        background: var(--background-elevated-contrast);
+
+        .lasttopic {
+            gap: 0;
+            padding: 0 var(--spacing-s);
+            margin: var(--spacing-s);
+            border-left: 10px solid var(--poster);
+
+
+            .date {
+                font: var(--f-xs) var(--f-mono);
+                text-transform: uppercase;
+            }
+
+            .title {
+                font: bold var(--f-base) var(--f-title);
+                font-stretch: 125%;
+                text-transform: uppercase;
+            }
+
+            .username {
+                font: var(--f-s) var(--f-title-deco);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#tablon #eventos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
+
+    .evento {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            border-radius: var(--spacing);
+            corner-shape: squircle;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: clip;
+        }
+
+        a {
+            font: bold var(--f-base) var(--f-banner);
+            font-stretch: 125%;
+            letter-spacing: .1ch;
+        }
+
+        p {
+            font: var(--f-s) var(--f-text);
+            text-wrap: balance;
+        }
+    }
+}
