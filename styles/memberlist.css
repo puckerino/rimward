@@ -50,9 +50,11 @@
         corner-shape: square square squircle squircle;
         display: flex;
         align-items: center;
+        padding: var(--spacing-s);
         
 
         li {
+            display: flex;
 
             .button {
                 svg {
