@@ -182,6 +182,26 @@
                 max-height: 300px;
             }
         }
+
+        .forum-links {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            border-radius: var(--spacing);
+            corner-shape: squircle;
+            gap: 2px;
+           border: 1px solid var(--border);
+           column-rule: 1px solid var(--border);
+           row-rule: 1px solid var(--border);
+           row-rule-break: none;
+           column-rule-break: none;
+           overflow: clip;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }      
     }
 }
 
