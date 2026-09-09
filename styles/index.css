@@ -44,7 +44,7 @@
 
     .links {
         grid-area: links;
-        font: var(--f-base) var(--f-mono);
+        font: var(--f-s) var(--f-mono);
         text-transform: uppercase;
     }
 
@@ -172,6 +172,9 @@
             padding: var(--spacing-s);
             border-left: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
+            border-radius: var(--spacing);
+            corner-shape:squircle;
+            background: color-mix(in srgb, var(--background-contrast), transparent 10%);
         }
 
         .forum-img {
@@ -189,7 +192,7 @@
         .forum-links {
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            border-radius: var(--spacing);
+            border-radius: var(--spacing-s);
             corner-shape: squircle;
             gap: 2px;
            border: 1px solid var(--border);
