@@ -4,6 +4,9 @@
     corner-shape: squircle;
     overflow: clip;
     width: var(--avatar-memberlist-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
 
     .avatar-memberlist {
         border-radius: var(--spacing);
@@ -19,9 +22,12 @@
     .username {
         font: var(--f-l) var(--f-title-deco);
         line-height: 1;
+        margin-top: -50%;
     }
 
     .data {
+        padding-left: 0 var(--spacing);
+        border-left: 1px solid var(--poster);
 
 
         li {
@@ -38,10 +44,19 @@
         background: var(--mono-5);
         border-radius: var(--spacing-s);
         corner-shape: square square squircle squircle;
+        display: flex;
+        align-items: center;
+        
 
         li {
 
-            .button {}
+            .button {
+                svg {
+                    height: 20px;
+                    width: 20px;
+                }
+                    
+            }
         }
     }
 }
