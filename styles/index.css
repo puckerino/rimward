@@ -170,10 +170,8 @@
         .data {
             justify-self: end;
             padding: var(--spacing-s);
-            border-left: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
             border-radius: var(--spacing);
-            corner-shape:squircle;
+            corner-shape:square squircle square squircle;
             background: color-mix(in srgb, var(--background-contrast), transparent 10%);
         }
 
