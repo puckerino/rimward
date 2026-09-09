@@ -1,0 +1,20 @@
+.topiclist-title {
+    background: var(--background-elevated-contrast);
+    color: var(--text-contrast);
+    border-radius: var(--spacing);
+    corner-shape: squircle squircle square square;
+    font: bold var(--f-xl) var(--f-title);
+    text-transform: uppercase;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
+
+    &:last-of-type,
+    &:only-child {
+        border-radius: var(--spacing);
+        corner-shape: square square squircle squircle;
+    }
+}
