@@ -20,13 +20,17 @@
     }
 
     .username {
+        width: 95%;
+        margin: 0 auto;
         font: var(--f-l) var(--f-title-deco);
         line-height: 1;
         margin-top: -50%;
     }
 
     .data {
-        padding-left: 0 var(--spacing);
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 var(--spacing);
         border-left: 1px solid var(--poster);
 
 
