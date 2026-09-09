@@ -1,0 +1,46 @@
+.member {
+    border: 1px solid var(--border);
+    border-radius: var(--spacing);
+    corner-shape: squircle;
+    overflow: clip;
+
+    .avatar-memberlist {
+        border-radius: var(--spacing);
+        corner-shape: squircle squircle square square;
+        mask-image: linear-gradient(to bottom, black, transparent);
+
+        img {
+            height: var(--avatar-memberlist-height);
+            width: var(--avatar-memberlist-width);
+        }
+    }
+
+    .username {
+        font: var(--f-l) var(--f-title-deco);
+        line-height: 1;
+    }
+
+    .data {
+
+
+        li {
+            display: flex;
+            flex-direction: column;
+            font: var(--f-s) var(--f-mono);
+            text-transform: uppercase;
+
+            span {}
+        }
+    }
+
+    .contact {
+        background: var(--mono-5);
+        border-radius: var(--spacing-s);
+        corner-shape: square square squircle squircle;
+
+        li {
+
+            .button {}
+        }
+    }
+}
