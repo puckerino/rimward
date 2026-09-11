@@ -11,12 +11,12 @@
     border: 1px solid var(--border);
     padding: var(--spacing-s);
     display: grid;
-    grid-template-columns: 60px 1fr 2rem .5fr;
+    grid-template-columns: 60px 1fr .25fr .5fr;
     grid-template-rows: repeat(3,max-content);
     grid-template-areas:
-        "icon title data lastpost"
-        "icon description data lastpost"
-        ". pagination pagination pagination";
+        "icon title author data"
+        "icon description lastpost lastpost"
+        "icon pagination lastpost lastpost";
 
     &:last-of-type,
     &:only-child {
@@ -47,13 +47,15 @@
     
     .author {
         grid-area: author;
-        
     }
     
     .data {
         grid-area: data;
         font: var(--f-s) var(--f-mono);
         text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
     .lastpost {
