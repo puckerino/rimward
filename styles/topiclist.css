@@ -8,9 +8,15 @@
 }
 
 .topic {
-    display: flex;
-    align-items: center;
     border: 1px solid var(--border);
+    padding: var(--spacing-s);
+    display: grid;
+    grid-template-columns: 60px 1fr 2rem .5fr;
+    grid-template-rows: repeat(3,max-content);
+    grid-template-areas:
+        "icon title data lastpost"
+        "icon description data lastpost"
+        ". pagination pagination pagination";
 
     &:last-of-type,
     &:only-child {
