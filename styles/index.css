@@ -333,6 +333,7 @@
 
 @media (max-width: 700px) {
     .forum-wrap {
+        grid-template-columns: 1 !important;
         border-radius: var(--spacing);
         corner-shape: squircle;
         gap: 2px;
@@ -346,9 +347,20 @@
 
     .forum {
         --forum-rows: 5;
-        grid-template-columns: max-content 1fr;
-        grid-template-areas: "img title" "icon data" ". desc" ". links" ". lastpost";
+        grid-template-columns: 60px 1fr;
+        grid-template-areas: "img title" "icon data" "desc desc" "links links" "lastpost lastpost";
         background: var(--surface);
         padding: var(--spacing);
+
+        .forum-img {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                aspect-ratio: 1 / 1;
+            }
+        }
     }
 }
