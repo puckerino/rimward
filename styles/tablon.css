@@ -13,13 +13,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing);
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 #tablon .lasttopics {
     grid-column: 1 / -1;
 
     .tablon-title {
-        font: bold var(--f-l) var(--f-title);
+        font: bold var(--f-xl) var(--f-title);
         font-stretch: 125%;
     }
 
@@ -37,6 +41,10 @@
         column-rule-break: none;
         overflow: clip;
         background: var(--background-elevated-contrast);
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
 
         .lasttopic {
             gap: 0;
