@@ -17,4 +17,40 @@
         border-radius: var(--spacing);
         corner-shape: square square squircle squircle;
     }
+
+    .icon {
+        grid-area: icon;
+    }
+    
+    .title {
+        grid-area: title;
+        font: bold var(--f-l) var(--f-title);
+        font-stretch: 125%;
+        text-transform: uppercase;
+    }
+
+    .description {
+        grid-area: description;
+        font: var(--f-s) var(--f-mono);
+        text-transform: uppercase;
+    }
+    
+    .pagination {
+        grid-area: pagination;
+    }
+    
+    .author {
+        grid-area: author;
+        
+    }
+    
+    .data {
+        grid-area: data;
+        font: var(--f-s) var(--f-mono);
+        text-transform: uppercase;
+    }
+    
+    .lastpost {
+        grid-area: lastpost;
+    }
 }
