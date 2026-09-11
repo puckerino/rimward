@@ -346,11 +346,15 @@
     }
 
     .forum {
-        --forum-rows: 5;
+        --forum-rows: 4;
         grid-template-columns: 60px 1fr;
-        grid-template-areas: "img title" "icon data" "desc desc" "links links" "lastpost lastpost";
+        grid-template-areas: "img title" "desc desc" "links links" "lastpost lastpost";
         background: var(--surface);
         padding: var(--spacing);
+
+        .icon, .data {
+            display: none;
+        }
 
         .forum-img {
             width: 60px;
