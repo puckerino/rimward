@@ -1,7 +1,7 @@
 .member {
     border: 1px solid var(--border);
     border-radius: var(--spacing);
-    corner-shape: squircle;
+    corner-shape: var(--shape-cards);
     overflow: clip;
     width: var(--avatar-memberlist-width);
     display: flex;
